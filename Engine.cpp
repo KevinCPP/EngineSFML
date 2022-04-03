@@ -6,11 +6,8 @@ Engine::Engine(const sf::VideoMode& videoMode, const std::string& title, const u
     window.create(videoMode, title, style);
     
     //set tps to be used for logic cycles
-    ticksPerSecond = TPS;
-    
-    //the game should start on the main menu
-    currentState = mainMenu;
-    
+    ticksPerSecond = TPS;  
+  
     //directory the default font is in
     std::string fontDir = "assets/default.ttf";
 
